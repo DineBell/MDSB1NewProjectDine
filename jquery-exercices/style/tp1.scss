@@ -1,0 +1,12 @@
+.grand{
+    font-size:2em;
+    color:purple;
+    &:hover{
+        color:blue;
+        font-style:italic;
+    }
+    td{
+        font-weight:900;
+        
+    }
+}

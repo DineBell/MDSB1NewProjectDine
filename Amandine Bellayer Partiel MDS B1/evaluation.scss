@@ -1,0 +1,40 @@
+$mobile-max:767px;
+$tablet: 768px;
+$tablet-max: 991px;
+$desktop:992px;
+
+
+
+.tablet{
+   
+    display: none;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width:$tablet) AND (max-width: $tablet-max){
+    
+    .tablet{
+        display: block;
+    }
+ 
+    #vignettes{
+    background-color: white;
+    &>*{
+        background-color: #ccc;
+        margin: 5px;
+        padding: 5px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+    }
+}   

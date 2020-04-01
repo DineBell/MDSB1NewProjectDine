@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Corrigé - Débugger</title>
+	<!-- Styles et scripts de base -->
+	<script type="text/javascript" src="script/jquery-latest.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css" media="screen" />
+	<!-- Styles et scripts du tp -->
+	<script type="text/javascript" src="script/debugger.js"></script>
+</head>
+<body>
+<div id="header">
+	<ul id="header-breadcrumb">
+		<li><a href="index.htm">Formation à jQuery</a></li>
+		<li> > débug</li>
+	</ul>
+	<ul id="header-extra">
+		<li><a id="home" title="Revenir au sommaire des travaux pratiques" href="index.htm">Sommaire</a></li>
+		<li><a id="eye" title="Voir le javacript" href="script/debugger.js">Source</a></li>
+		<li><a id="precedent" title="TP 8" href="tp8.htm">Précédent</a></li>
+		<li><a id="suivant" title="TP 1" href="tp1.htm">Suivant</a></li>
+	</ul>
+</div>
+<div id="conteneur">
+	<div id="demo">
+		<h1>Débugger</h1>
+		<table id="reg23">
+			<caption>Alsace</caption>
+			<thead>
+				<tr>
+					<th id="reg23nom">Nom</th>
+					<th id="reg23t4">2011</th>
+					<th id="reg23t3">2010</th>
+					<th id="reg23t2">2009</th>
+					<th id="reg23t1">2008</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="dep67">
+					<th headers="reg23nom">Bas-Rhin</th>
+					<td headers="reg23t4">7,9</td>
+					<td headers="reg23t3">7,8</td>
+					<td headers="reg23t2">8</td>
+					<td headers="reg23t1">7,7</td>
+				</tr>
+				<tr id="dep68">
+					<th headers="reg23nom">Haut-Rhin</th>
+					<td headers="reg23t4">8,9</td>
+					<td headers="reg23t3">8,7</td>
+					<td headers="reg23t2">9</td>
+					<td headers="reg23t1">8,6</td>
+				</tr>
+				<tr class="region-reference" id="reg23ref">
+					<th headers="reg23nom">Alsace</th>
+					<td headers="reg23t4">8,3</td>
+					<td headers="reg23t3">8,1</td>
+					<td headers="reg23t2">8,2</td>
+					<td headers="reg23t1">8,2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="ennonce">
+		<h2>Débugger avec la fonction alert</h2>
+		<p>On exécute la fonction alert("...") avant ou après le chargement de la page pour vérifier que la page est bien appelée</p>
+		<h2>Débugger avec une transformation simple</h2>
+		<p>On fait une transformation simple et bien visible avec jQuery. </p>
+		<pre>$("h1").css("color","red") ;</pre>
+		<p>On d&eacute;place ce court script pour voir à quel niveau le code a plant&eacute;.</p>
+		<h2>Débugger avec FireBug</h2>
+		<p>Firebug permet une communication entre le script et la console.</p>
+		<p>On écrit du texte libre :</p>
+		<pre>console.log("fichier debugger.js :") ;</pre>
+		<p>On écrit des éléments dans la console :</p>
+		<pre>console.log($(h1)) ;</pre>
+		<p>Pour afficher la console, on ouvre le panneau de firebug et on clique sur l'onglet console (le cas échéant il sera demandé d'activer la console).</p>
+
+	</div>
+</div>
+</body>
+</html>

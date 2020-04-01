@@ -1,0 +1,81 @@
+// couleurs
+$couleur_principale:red;
+$couleur_secondaire:blue;
+
+// raccourci couleurs
+$cp: $couleur_principale;
+$cs: $couleur_secondaire;
+
+
+
+body{
+    
+    // couleur titre
+    h1{
+        color: $cp;
+        
+        // couleur survol
+        &:hover{
+            color:$cs;
+        }
+            
+    }
+} 
+// PLACEHOLDER
+%message{
+        padding: .5em;
+        border: 1 px solid rgba(0,0,0,.1);
+        font-weight: bold;
+    }
+    
+@mixin size($width, $height:$width){
+        
+    width:$width;
+    height: $height;   
+}
+.message{
+        &-error{
+            @include size(200px);
+            color: red;
+            @extend %message;
+        }
+        &-valid{
+            @include size(150px, 180px);
+            color: green;
+            @extend %message;
+        }
+        &-warning{
+            @include size(220px);
+            color: orange;
+            @extend %message;
+        }
+        &-info{
+            @include size(120px, 50px);
+            color: blue;
+            @extend %message;
+    }
+    
+ 
+    
+}
+
+// https://sass-lang.com/documentation/at-rules/mixin
+
+@mixin br($valeur1: 5px, $valeur2:$valeur1,$valeur3:$valeur1,$valeur4:$valeur1){
+    border-radius: $valeur1 $valeur2 $valeur3 $valeur4;
+}
+// ^= raccourci pour dire "commence par" / $=raccourci pour dire finir par
+[class^=exemple]{
+    background: green;
+    padding: 20px;
+}
+.exemple1{
+    @include br;
+}
+.exemple2{
+    @include br(10px);
+    
+}
+.exemple3{
+    @include br(10px, 55px,28px,4px);
+}

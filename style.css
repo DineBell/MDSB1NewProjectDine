@@ -1,0 +1,58 @@
+body{
+    background-color: blanchedalmond;
+}
+
+#effets div,#tests div,#animate div, #maBoite{
+    background: red;
+    height: 100px;
+    margin: 2px;
+}
+/* // #tests div {  ON PEUT ERIRE UN PARAGRAPHE COMME CA MAIS ON PEUT AUSSI CONCATENER TOUT ENSEMBLE COMME AU DESSUS
+//    background: red;
+//    height: 100px;
+//    margin: 2px;
+//} */ 
+
+/* //  rajout d'un classe alerte qui a pour fonction de mettre le texte en rouge */
+.alerte{
+     color:red;
+ }   
+ 
+ .highlight{
+     background-color: yellow;
+ }
+ .bordure{
+     border: 5px solid black;
+ }
+ 
+ .vert{
+     background-color: green !important; /* !important pour que cette couleur passe devant tout le mponde , soit en priorité */
+ }
+ 
+ 
+ #toggle p{
+     font-size:1em;
+ } 
+ 
+#photos div img{      /* // pour disparaitre toutes les images au depart}*/
+    display: none;               
+}                  
+#photos nav ul{                   /* enleve les points de la liste a puce et enleve la goutiere qu'il y a entre les colones*/
+    list-style: none;
+    padding: 0;
+}   
+    
+#photos nav li{                     /* met une bordure pour decoller les vignettes entre elles */
+    margin-bottom: 10px;
+}                   
+#photos nav li img{                    /* redimensionne les grandes photos ' */
+    max-width: 70%;
+    height: auto;
+    filter: blur(1px);
+}
+
+#photos nav li img:hover{
+    filter: blur(0);
+}
+/*    filtres image css https://vesvouweb.com/filtres-images-css3/ */
+

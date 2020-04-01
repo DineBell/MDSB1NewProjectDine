@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+          <link href="css/evaluation.css" rel="stylesheet">
+       
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>     
+    </head>
+ 
+    <body>
+   
+        <section id="blocs" class="container-fluid">
+           <div class="row d-flex justify-content-between align-items-center">
+                <article class="col-md-4">
+                    <header>
+                        <figure>
+                            <img src="images/Learning.svg" alt="learning">
+                        </figure>
+                        <h1 class="text-center">Learning</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                    </header>        
+                </article> 
+                <article class="col-md-4">
+                    <header>
+                        <figure>
+                            <img src="images/Goals.svg" alt="goals">
+                        </figure>
+                        <h1 class="text-center">Goals</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                    </header>        
+                </article> 
+                <article class="col-md-4">
+                    <header>
+                        <figure>
+                            <img src="images/Play.svg" alt="play">
+                        </figure>
+                        <h1 class="text-center">Play</h1>
+                        <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+                    </header>        
+                </article> 
+        </section>
+        <section id="vignettes" class="row">
+                <nav class="col-2">
+                    <ul>                                      
+                        <li><img src="images/vignette1.jpg" alt="vignette 1"></li>
+                        <li><img src="images/vignette2.jpg" alt="vignette 2"></li>
+                        <li><img src="images/vignette3.jpg" alt="vignette 3"></li>                  
+                    </ul>
+                </nav>
+               
+       
+            <div id="video" class="col-10">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/_t773h9UolY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        
+        </section>
+              
+       
+       
+        <section id="tableau" class="relative">
+        <div id="conteneur">
+	
+	<h2>Section Tableau</h2>
+	<ul class="onglets">
+		<li><a href="#blocs">Blocs</a></li>
+		<li><a href="#vignettes">Vignettes</a></li>
+		<li><a href="#tableau">Tableau</a></li>
+	</ul>
+	<table id="tableau">
+		
+		<thead>
+			<tr>
+				<th id="nomligne">Nom ligne</th>
+				<th id="col1">titre col</th>
+				<th id="col2">titre col</th>
+				<th id="col3">titre col</th>
+				<th id="col4">titre col</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="tableaupremier">
+				<th headers="nomligne1">Nom ligne 1</th>
+				<td headers="Ligne1cell1">cell</td>
+				<td headers="Ligne2cell2">cell</td>
+				<td headers="Ligne3cell3">cell</td>
+				<td headers="Ligne4cell4">cell</td>
+			</tr>
+			<tr id="tableaudeux">
+				<th headers="nomligne2">Nom ligne 2</th>
+				<td headers="Ligne2cell1">cell</td>
+				<td headers="Ligne2cell2">cell</td>
+				<td headers="Ligne2cell3">cell</td>
+				<td headers="Ligne2cell4">cell</td>
+			</tr>
+			<tr id="tableautrois">
+				<th headers="nomligne3">Nom ligne 3</th>
+				<td headers="Ligne3cell1">cell</td>
+				<td headers="Ligne3cell2">cell</td>
+				<td headers="Ligne3cell3">cell</td>
+				<td headers="Ligne3cell4">cell</td>
+			</tr>
+			<tr id="tableauquattre">
+				<th headers="nomligne4">Nom ligne 4</th>
+				<td headers="Ligne4cell1">cell</td>
+				<td headers="Ligne4cell2">cell</td>
+				<td headers="Ligne4cell3">cell</td>
+				<td headers="Ligne4cell4">cell</td>
+			</tr>
+			<tr class="tableau" id="tableau">
+				<th headers="nomligne5">Nom ligne 5
+				<td headers="Ligne5cell1">cell</td>
+				<td headers="Ligne5cell2">cell</td>
+				<td headers="Ligne5cell3">cell</td>
+				<td headers="Ligne5cell4">cell</td>
+			</tr>
+		</tbody>
+	</table>
+        </div>
+        </section>      
+        
+        <script src="sass/evaluation.min.js"></script>
+
+        <script src="evaluation.js"></script>
+    </body>
+</html>

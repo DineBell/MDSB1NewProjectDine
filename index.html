@@ -7,10 +7,101 @@ and open the template in the editor.
 <html>
     <head>
         <title>Ma première page github</title>
+        <script src="monjs.js" type="text/javascript"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>    
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="container">
+            <header class="row">
+                <h1 class="col-4">Ma première page</h1>
+                <nav class="col-8"> 
+                    <a href="/">Accueil</a> | <a href="autre.html">Autre page</a>
+                </nav>
+            </header>
+            <section class="row">
+                <p class="exemple1">TEST</p>
+                <p class="exemple2">TEST</p>
+                <p class="exemple3">TEST</p>                        
+            </section>
+            <section class="row">
+                <div class="col-6">Ma première colonne</div>
+                <div class="col-6">Ma deuxième colonne</div>
+            </section> 
+            <!-- ce dessous je vais creer une div avec une boite rouge -->
+            <section  id="effets" class="row">
+                <div class="col-1"></div>
+            </section> 
+            <button id="test" class="btn btn-outline-danger"> Réapparition !</button>
+                <section id="effets" class="row">
+                <div class="col-1"></div>
+                </section>
+            <section id="tests" class="row">
+                <div id="box1" class="col-1"></div>
+                <div id="box2" class="col-1"></div>
+                <div id="box3" class="col-1"></div>
+            </section>
+            <section id="animate" class="row">
+                <div class="col-2">
+                    test
+                </div>
+                <div class="col-2">
+                    test2
+                </div>
+                <div class="col-2">
+                    test3
+                </div>
+            </section>
+            <section id="ecureuil" class="row">
+                <button id="no-alerte" class="col-3">NON</button> <!--// je cree un bouton NOn au dessus des lignes de la liste-->
+                <button id="plus" class="col-1 btn btn-outline-danger">Ajouter</button>
+                <button id="moins" class="col-1 btn btn-outline-danger">Enlever</button>
+                <ul class="col-12">
+                    <li>Ma première ligne</li>
+                    <li> test <a href="#ecureuil">ligne 2</a></li>
+                    <li>ligne 3</li>
+                    <li> test <a href="#ecureuil">ligne 4</a></li>
+                    <li>ligne 5</li>
+                    <li>ligne 6</li>
+                </ul>
+            </section>
+            <section class="row" id="toggle">
+                <button id="theToggle" class="col-2">Click me !</button>
+                <button id="plusgrand" class="col-2 btn btn-outline-danger taille">Plus grand!</button>
+                <button id="pluspetit" class="col-2 btn btn-outline-danger taille">Plus petit !</button>
+                <div id="maBoite" class="col-12">Ma belle boite ! </div>
+                <p class="col-12">Ceci est un pragraphe</p>
+                <p class="col-12">Ceci est un pragraphe</p>
+                <p class="col-12">Ceci est un pragraphe</p>
+                <p class="col-12">Ceci est un pragraphe</p>
+                <p class="col-12">Ceci est un pragraphe</p>
+                <p class="col-12">Ceci est un pragraphe</p>
+            </section>
+            <section id="photos" class="row">
+                <nav class="col-2">
+                    <ul>                                      
+                        <li><img src="images/vignette1.jpg" alt="vignette 1"></li>
+                        <li><img src="images/vignette2.jpg" alt="vignette 2"></li>
+                        <li><img src="images/vignette3.jpg" alt="vignette 3"></li>                  
+                    </ul>
+                </nav>
+                <div class="col-10">
+                    <img src="images/image1.jpg" alt="image 1">
+                    <img src="images/image2.jpg" alt="image 2">
+                    <img src="images/image3.jpg" alt="image 3">
+                    
+                </div>
+            </section>
+              
+                      
+                  
+        <script src="monjs.js"></script>
     </body>
+        </div>
 </html>
+

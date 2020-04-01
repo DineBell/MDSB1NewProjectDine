@@ -1,0 +1,41 @@
+body h1 {
+  color: red; }
+  body h1:hover {
+    color: blue; }
+
+.message-error, .message-valid, .message-warning, .message-info {
+  padding: .5em;
+  border: 1 px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold; }
+
+.message-error {
+  width: 200px;
+  height: 200px;
+  color: red; }
+.message-valid {
+  width: 150px;
+  height: 180px;
+  color: green; }
+.message-warning {
+  width: 220px;
+  height: 220px;
+  color: orange; }
+.message-info {
+  width: 120px;
+  height: 50px;
+  color: blue; }
+
+[class^=exemple] {
+  background: green;
+  padding: 20px; }
+
+.exemple1 {
+  border-radius: 5px 5px 5px 5px; }
+
+.exemple2 {
+  border-radius: 10px 10px 10px 10px; }
+
+.exemple3 {
+  border-radius: 10px 55px 28px 4px; }
+
+/*# sourceMappingURL=style.css.map */
